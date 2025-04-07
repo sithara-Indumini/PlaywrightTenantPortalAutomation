@@ -1,0 +1,21 @@
+{
+  "name": "workdirectory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.9",
+    "allure-playwright": "^3.2.1"
+  },
+  "dependencies": {
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "playwright": "^1.51.1",
+    "xlsx": "^0.18.5"
+  }
+}

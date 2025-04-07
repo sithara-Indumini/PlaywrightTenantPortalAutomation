@@ -1,0 +1,60 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Data Driven Testing Using excel file in playwright: API Testing by Testers Talk - Index: 2
+- Location: C:\WorkDirectory\tests\Chapter05\04_DataDrivenTestingUsingExcel.spec.ts:17:9
+
+# Error details
+
+```
+Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.youtube.com/", waiting until "load"
+
+    at C:\WorkDirectory\tests\Chapter05\04_DataDrivenTestingUsingExcel.spec.ts:19:20
+```
+
+# Test source
+
+```ts
+   1 |
+   2 | // Import playwright module
+   3 | import { test, expect } from '@playwright/test';
+   4 |
+   5 | import path from 'path';
+   6 | import { readExcelFile } from '../../src/utils/ExcelHelper';
+   7 |
+   8 |
+   9 | const filePath = path.join(__dirname, '../../test-data/qa/TestData.xlsx');
+  10 | const records = readExcelFile(filePath);
+  11 |
+  12 |
+  13 |
+  14 | for (const record of records) {
+  15 |
+  16 |
+  17 |     test(`Data Driven Testing Using excel file in playwright: ${record.Skill1} - Index: ${records.indexOf(record)}`, async ({ page }) => {
+  18 |         // Go to URL
+> 19 |         await page.goto('https://www.youtube.com/');
+     |                    ^ Error: page.goto: Target page, context or browser has been closed
+  20 |       
+  21 |         // Searching
+  22 |         await page.getByPlaceholder('Search', { exact: true }).first().fill(record.Skill1);
+  23 |         await page.getByPlaceholder('Search', { exact: true }).press('Enter');
+  24 |       
+  25 |         // Assertion
+  26 |         await expect(page).toHaveTitle(record.Skill1 + ' - YouTube');
+  27 |       });
+  28 |       
+  29 |
+  30 |
+  31 |     };
+  32 |     
+  33 |
+  34 |
+```

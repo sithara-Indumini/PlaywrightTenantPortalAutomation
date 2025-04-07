@@ -1,0 +1,13 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="25.18870499999996">
+<testsuite name="Chapter05\07_Optimized_POM_Test.spec.ts" timestamp="2025-04-07T01:55:39.402Z" hostname="firefox" tests="1" failures="0" skipped="0" time="20.341" errors="0">
+<testcase name="Optimized Page Object Model Test in Playwright" classname="Chapter05\07_Optimized_POM_Test.spec.ts" time="20.341">
+<system-out>
+<![CDATA[Global before is running...
+Global afterEach is running...
+
+[[ATTACHMENT|test-results\Chapter05-07_Optimized_POM-8ed76-ct-Model-Test-in-Playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

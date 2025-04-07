@@ -1,0 +1,49 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Get Text & Get attribute value in playwright
+- Location: C:\WorkDirectory\tests\Chapter04\05_TextContent_GetAttribute_Test.spec.ts:4:5
+
+# Error details
+
+```
+Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://github.com/BakkappaN", waiting until "load"
+
+    at C:\WorkDirectory\tests\Chapter04\05_TextContent_GetAttribute_Test.spec.ts:6:16
+```
+
+# Test source
+
+```ts
+   1 | // Import playwright module
+   2 | import { test, expect } from '@playwright/test'
+   3 |
+   4 | test('Get Text & Get attribute value in playwright', async ({ page }) => {
+   5 |     // Go to URL
+>  6 |     await page.goto('https://github.com/BakkappaN');
+     |                ^ Error: page.goto: Target page, context or browser has been closed
+   7 |
+   8 |     // Get element text & assert
+   9 |    
+  10 |    const name= await page.locator('[itemprop="name"]').textContent();
+  11 |    name?.trim();
+  12 |    console.log(`Name is: ${name}`);
+  13 |   
+  14 |    
+  15 |    /* const name = await page.locator('[itemprop="name"]').innerText();
+  16 |     const finalName = name?.trim();
+  17 |     console.log(`Name is : ${finalName}`);
+  18 |     expect(finalName).toBe('Testers Talk');
+  19 |
+  20 |     // Get attribute value
+  21 |     const attributeValue = await page.getByTestId('repositories').first().getAttribute('data-selected-links');
+  22 |     console.log(`Attribute value is : ${attributeValue}`);*/
+  23 | });
+```

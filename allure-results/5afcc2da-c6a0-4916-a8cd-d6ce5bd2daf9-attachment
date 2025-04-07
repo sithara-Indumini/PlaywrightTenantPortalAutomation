@@ -1,0 +1,54 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Optimized Page Object Model Test in Playwright
+- Location: C:\WorkDirectory\tests\Chapter05\08_RunTestBasedOnEnv.spec.ts:4:5
+
+# Error details
+
+```
+Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.youtube.com/", waiting until "load"
+
+    at HomePage.goToURL (C:\WorkDirectory\src\pages\HomePage.ts:16:25)
+    at C:\WorkDirectory\tests\Chapter05\08_RunTestBasedOnEnv.spec.ts:7:20
+```
+
+# Test source
+
+```ts
+   1 | import { Locator, Page } from "playwright";
+   2 |
+   3 | export class HomePage {
+   4 |     readonly page: Page;
+   5 |     readonly searchTexbox: Locator;
+   6 |
+   7 |     constructor(page: Page) {
+   8 |         this.page = page;
+   9 |
+  10 |         //Elements
+  11 |         this.searchTexbox = page.getByPlaceholder('Search')
+  12 |     }
+  13 |
+  14 |     //Methods
+  15 |     async goToURL() {
+> 16 |         await this.page.goto(`${process.env.YT_URL}`);
+     |                         ^ Error: page.goto: Target page, context or browser has been closed
+  17 |     }
+  18 |
+  19 |     async searchWithKeywords(keyword: string) {
+  20 |         await this.searchTexbox.waitFor({ state: 'visible' });
+  21 |         await this.searchTexbox.click();
+  22 |         await this.searchTexbox.fill(keyword);
+  23 |         await this.searchTexbox.press('Enter');
+  24 |
+  25 |
+  26 |     }
+  27 | }
+```

@@ -1,0 +1,287 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Page Object Model Test in Playwright
+- Location: C:\WorkDirectory\tests\Chapter05\05_PageObjectModelTest.spec.ts:10:5
+
+# Error details
+
+```
+Error: Timed out 10000ms waiting for expect(locator).toHaveTitle(expected)
+
+Locator: locator(':root')
+Expected string: "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial"
+Received string: "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial - YouTube"
+Call log:
+  - expect.toHaveTitle with timeout 10000ms
+  - waiting for locator(':root')
+    5 × locator resolved to <html lang="en" refresh="" typography="" system-icons="" darker-dark-theme="" typography-spacing="" darker-dark-theme-deprecate="">…</html>
+      - unexpected value "YouTube"
+    7 × locator resolved to <html lang="en" refresh="" typography="" system-icons="" darker-dark-theme="" typography-spacing="" darker-dark-theme-deprecate="">…</html>
+      - unexpected value "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial - YouTube"
+
+    at PlayListPage.validatPageTitle (C:\WorkDirectory\src\pages\PlayListPage.ts:19:31)
+    at C:\WorkDirectory\tests\Chapter05\05_PageObjectModelTest.spec.ts:23:24
+```
+
+# Page snapshot
+
+```yaml
+- dialog
+- banner:
+  - button "Guide"
+  - link "YouTube Home"
+  - text: LK
+  - button "Skip navigation"
+  - search:
+    - combobox "Search" [expanded]: Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial
+    - button "Clear search query"
+    - button "Search"
+  - button "Search with your voice"
+  - tooltip "tooltip"
+  - button "Settings"
+  - link "Sign in"
+- main:
+  - complementary:
+    - img
+    - text: Damro Aluth Avurudu Sale damro.lk
+    - link "Learn more This link opens in new tab": Learn more
+    - text: Sponsored
+    - button "My Ad Center":
+      - img
+    - link "damro.lk This link opens in new tab": damro.lk
+    - button "Skip":
+      - text: Skip
+      - img
+    - text: Available at All Damro Showrooms.
+    - slider "Seek slider"
+    - button "Play (k)":
+      - img
+    - button "Next (SHIFT+n)":
+      - img
+    - button "Mute (m)":
+      - img
+    - slider "Volume"
+    - text: 0:02 / 0:14
+    - button "Subtitles/closed captions unavailable" [pressed]:
+      - img
+    - button "Settings":
+      - img
+    - button "Miniplayer (i)":
+      - img
+    - button "Theater mode (t)":
+      - img
+    - button "Full screen (f)":
+      - img
+  - heading "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial" [level=1]
+  - link
+  - link "Testers Talk"
+  - tooltip "tooltip"
+  - text: 23.3K subscribers
+  - button "Subscribe to Testers Talk.": Subscribe
+  - button "like this video along with 724 other people": "724"
+  - button "Dislike this video"
+  - button "Share"
+  - button "More actions"
+  - text: 76K views 1 year ago
+  - link "#playwright"
+  - link "#testing"
+  - link "#testautomation"
+  - tooltip "tooltip"
+  - text: Playwright enables reliable end-to-end testing for modern web apps. Playwright is an open-source automation …
+  - button "...more"
+  - heading "Live chat replay" [level=2]
+  - text: See what others said about this video while it was live.
+  - button "Open panel"
+  - button "Show chat replay"
+  - button
+  - text: Damro Aluth Avurudu Sale Sponsored · damro.lk
+  - link "Learn more"
+  - button "My Ad Center"
+  - link "Playwright API Testing Tutorial Crash Course 2024 by Testers Talk 23,310 views 1 year ago 1 hour, 59 minutes Testers Talk tooltip 23K views •1 year ago":
+    - heading "Playwright API Testing Tutorial Crash Course 2024 by Testers Talk 23,310 views 1 year ago 1 hour, 59 minutes" [level=3]: Playwright API Testing Tutorial Crash Course 2024
+    - text: Testers Talk
+    - tooltip "tooltip"
+    - text: 23K views •1 year ago
+  - button "Action menu"
+  - link "Complete Playwright Testing Tutorial | An End to End Playwright with TypeScript Course 🎭| LambdaTest by LambdaTest 233,215 views 2 years ago 5 hours, 41 minutes LambdaTest tooltip 233K views •2 years ago":
+    - heading "Complete Playwright Testing Tutorial | An End to End Playwright with TypeScript Course 🎭| LambdaTest by LambdaTest 233,215 views 2 years ago 5 hours, 41 minutes" [level=3]: Complete Playwright Testing Tutorial | An End to End Playwright with TypeScript Course 🎭| LambdaTest
+    - text: LambdaTest
+    - tooltip "tooltip"
+    - text: 233K views •2 years ago
+  - button "Action menu"
+  - link "N8N vs Vectorshift - Which Automation Tool Is Better? (2025) by Skillcraft AI 2 views 9 hours ago 4 minutes, 27 seconds Skillcraft AI tooltip 2 views •9 hours ago New":
+    - heading "N8N vs Vectorshift - Which Automation Tool Is Better? (2025) by Skillcraft AI 2 views 9 hours ago 4 minutes, 27 seconds" [level=3]: N8N vs Vectorshift - Which Automation Tool Is Better? (2025)
+    - text: Skillcraft AI
+    - tooltip "tooltip"
+    - text: 2 views •9 hours ago
+    - img "New":
+      - paragraph: New
+  - button "Action menu"
+  - link "Playwright with Javascript Full Course - Master Playwright in 10 Hours by Testing Funda by Zeeshan Asghar 126,583 views 1 year ago 9 hours, 55 minutes Testing Funda by Zeeshan Asghar tooltip 126K views •1 year ago":
+    - heading "Playwright with Javascript Full Course - Master Playwright in 10 Hours by Testing Funda by Zeeshan Asghar 126,583 views 1 year ago 9 hours, 55 minutes" [level=3]: Playwright with Javascript Full Course - Master Playwright in 10 Hours
+    - text: Testing Funda by Zeeshan Asghar
+    - tooltip "tooltip"
+    - text: 126K views •1 year ago
+  - button "Action menu"
+  - link "Introduction to Playwright for End-to-End Testing with Debbie O'Brien | JS Drops by This Dot Media 30,021 views 1 year ago 1 hour, 20 minutes This Dot Media tooltip 30K views •1 year ago":
+    - heading "Introduction to Playwright for End-to-End Testing with Debbie O'Brien | JS Drops by This Dot Media 30,021 views 1 year ago 1 hour, 20 minutes" [level=3]: Introduction to Playwright for End-to-End Testing with Debbie O'Brien | JS Drops
+    - text: This Dot Media
+    - tooltip "tooltip"
+    - text: 30K views •1 year ago
+  - button "Action menu"
+  - link "#1 Playwright Automation Using TypeScript Full Course 2025 | Playwright TypeScript Beginner Tutorial by Testers Talk 18,074 views 2 months ago 8 hours, 55 minutes Testers Talk tooltip 18K views •2 months ago":
+    - heading "#1 Playwright Automation Using TypeScript Full Course 2025 | Playwright TypeScript Beginner Tutorial by Testers Talk 18,074 views 2 months ago 8 hours, 55 minutes" [level=3]: "#1 Playwright Automation Using TypeScript Full Course 2025 | Playwright TypeScript Beginner Tutorial"
+    - text: Testers Talk
+    - tooltip "tooltip"
+    - text: 18K views •2 months ago
+  - button "Action menu"
+  - link "Janaranjana Garage | ජනරංජන ගරාජ් | Vini Productions - විනී by Vini Productions - විනී 2,272,882 views 3 days ago 22 minutes Vini Productions - විනී tooltip Verified 2.2M views •3 days ago New":
+    - heading "Janaranjana Garage | ජනරංජන ගරාජ් | Vini Productions - විනී by Vini Productions - විනී 2,272,882 views 3 days ago 22 minutes" [level=3]: Janaranjana Garage | ජනරංජන ගරාජ් | Vini Productions - විනී
+    - text: Vini Productions - විනී
+    - tooltip "tooltip"
+    - img "Verified":
+      - paragraph
+      - tooltip "tooltip"
+    - text: 2.2M views •3 days ago
+    - img "New":
+      - paragraph: New
+  - button "Action menu"
+  - link "How to use ChatGPT in Software Testing and Automation | Revolutionise Software Testing & Automation by SDET- QA 155,245 views 9 months ago 1 hour, 35 minutes SDET- QA tooltip Verified 155K views •9 months ago":
+    - heading "How to use ChatGPT in Software Testing and Automation | Revolutionise Software Testing & Automation by SDET- QA 155,245 views 9 months ago 1 hour, 35 minutes" [level=3]: How to use ChatGPT in Software Testing and Automation | Revolutionise Software Testing & Automation
+    - text: SDET- QA
+    - tooltip "tooltip"
+    - img "Verified":
+      - paragraph
+      - tooltip "tooltip"
+    - text: 155K views •9 months ago
+  - button "Action menu"
+  - link "Awesome Web Testing with Playwright ft Andrew (Pandy) Knight | JS Drops by This Dot Media 9,868 views 1 year ago 1 hour, 37 minutes This Dot Media tooltip 9.8K views •1 year ago":
+    - heading "Awesome Web Testing with Playwright ft Andrew (Pandy) Knight | JS Drops by This Dot Media 9,868 views 1 year ago 1 hour, 37 minutes" [level=3]: Awesome Web Testing with Playwright ft Andrew (Pandy) Knight | JS Drops
+    - text: This Dot Media
+    - tooltip "tooltip"
+    - text: 9.8K views •1 year ago
+  - button "Action menu"
+  - link "Playwright Automation with TypeScript | LIVE Demo & Introduction to Playwright & It's Features by SDET- QA 4,161 views 3 days ago 1 hour, 3 minutes SDET- QA tooltip Verified 4.1K views •3 days ago New":
+    - heading "Playwright Automation with TypeScript | LIVE Demo & Introduction to Playwright & It's Features by SDET- QA 4,161 views 3 days ago 1 hour, 3 minutes" [level=3]: Playwright Automation with TypeScript | LIVE Demo & Introduction to Playwright & It's Features
+    - text: SDET- QA
+    - tooltip "tooltip"
+    - img "Verified":
+      - paragraph
+      - tooltip "tooltip"
+    - text: 4.1K views •3 days ago
+    - img "New":
+      - paragraph: New
+  - button "Action menu"
+  - link "Learn Playwright Java in 5 Hours⏰ | Complete Playwright Java Tutorial | LambdaTest by LambdaTest 32,396 views 1 year ago 5 hours, 2 minutes LambdaTest tooltip 32K views •1 year ago":
+    - heading "Learn Playwright Java in 5 Hours⏰ | Complete Playwright Java Tutorial | LambdaTest by LambdaTest 32,396 views 1 year ago 5 hours, 2 minutes" [level=3]: Learn Playwright Java in 5 Hours⏰ | Complete Playwright Java Tutorial | LambdaTest
+    - text: LambdaTest
+    - tooltip "tooltip"
+    - text: 32K views •1 year ago
+  - button "Action menu"
+  - link "Playwright Interview Questions and Answers by LetCode with Koushik 27,108 views 1 year ago 16 minutes LetCode with Koushik tooltip 27K views •1 year ago":
+    - heading "Playwright Interview Questions and Answers by LetCode with Koushik 27,108 views 1 year ago 16 minutes" [level=3]: Playwright Interview Questions and Answers
+    - text: LetCode with Koushik
+    - tooltip "tooltip"
+    - text: 27K views •1 year ago
+  - button "Action menu"
+  - link "Playwright Automation Tutorial For Beginners From Scratch by Mukesh otwani 55,361 views 6 months ago 8 hours, 17 minutes Mukesh otwani tooltip Verified 55K views •6 months ago":
+    - heading "Playwright Automation Tutorial For Beginners From Scratch by Mukesh otwani 55,361 views 6 months ago 8 hours, 17 minutes" [level=3]: Playwright Automation Tutorial For Beginners From Scratch
+    - text: Mukesh otwani
+    - tooltip "tooltip"
+    - img "Verified":
+      - paragraph
+      - tooltip "tooltip"
+    - text: 55K views •6 months ago
+  - button "Action menu"
+  - link "Complete Kubernetes Course - From BEGINNER to PRO by DevOps Directive 230,729 views 7 months ago 6 hours, 14 minutes DevOps Directive tooltip 230K views •7 months ago":
+    - heading "Complete Kubernetes Course - From BEGINNER to PRO by DevOps Directive 230,729 views 7 months ago 6 hours, 14 minutes" [level=3]: Complete Kubernetes Course - From BEGINNER to PRO
+    - text: DevOps Directive
+    - tooltip "tooltip"
+    - text: 230K views •7 months ago
+  - button "Action menu"
+  - link "Cypress Tutorial Full Course | Cypress Automation | Learn Cypress in 5 Hrs by Testers Talk 51,780 views 1 year ago 5 hours, 4 minutes Testers Talk tooltip 51K views •1 year ago":
+    - heading "Cypress Tutorial Full Course | Cypress Automation | Learn Cypress in 5 Hrs by Testers Talk 51,780 views 1 year ago 5 hours, 4 minutes" [level=3]: Cypress Tutorial Full Course | Cypress Automation | Learn Cypress in 5 Hrs
+    - text: Testers Talk
+    - tooltip "tooltip"
+    - text: 51K views •1 year ago
+  - button "Action menu"
+  - link "Business Analyst Full Course [2024] | Business Analyst Tutorial For Beginners | Edureka by edureka! 363,061 views Streamed 2 years ago 3 hours, 28 minutes edureka! tooltip Verified 363K views •Streamed 2 years ago":
+    - heading "Business Analyst Full Course [2024] | Business Analyst Tutorial For Beginners | Edureka by edureka! 363,061 views Streamed 2 years ago 3 hours, 28 minutes" [level=3]: Business Analyst Full Course [2024] | Business Analyst Tutorial For Beginners | Edureka
+    - text: edureka!
+    - tooltip "tooltip"
+    - img "Verified":
+      - paragraph
+      - tooltip "tooltip"
+    - text: 363K views •Streamed 2 years ago
+  - button "Action menu"
+  - link "Playwright Tutorial Java Full Course in One Shot by The Testing Academy 9,869 views 1 year ago 2 hours, 33 minutes The Testing Academy tooltip Verified 9.8K views •1 year ago":
+    - heading "Playwright Tutorial Java Full Course in One Shot by The Testing Academy 9,869 views 1 year ago 2 hours, 33 minutes" [level=3]: Playwright Tutorial Java Full Course in One Shot
+    - text: The Testing Academy
+    - tooltip "tooltip"
+    - img "Verified":
+      - paragraph
+      - tooltip "tooltip"
+    - text: 9.8K views •1 year ago
+  - button "Action menu"
+  - link "Learn Postman for API Testing (Step-by-Step Tutorial) by Automation Step by Step 81,134 views 6 months ago 1 hour, 35 minutes Automation Step by Step tooltip Verified 81K views •6 months ago":
+    - heading "Learn Postman for API Testing (Step-by-Step Tutorial) by Automation Step by Step 81,134 views 6 months ago 1 hour, 35 minutes" [level=3]: Learn Postman for API Testing (Step-by-Step Tutorial)
+    - text: Automation Step by Step
+    - tooltip "tooltip"
+    - img "Verified":
+      - paragraph
+      - tooltip "tooltip"
+    - text: 81K views •6 months ago
+  - button "Action menu"
+  - link "JMeter Full Course Masterclass | Step by Step for Beginners | Raghav Pal | by Automation Step by Step 1,073,889 views 4 years ago 3 hours, 31 minutes Automation Step by Step tooltip Verified 1M views •4 years ago":
+    - heading "JMeter Full Course Masterclass | Step by Step for Beginners | Raghav Pal | by Automation Step by Step 1,073,889 views 4 years ago 3 hours, 31 minutes" [level=3]: JMeter Full Course Masterclass | Step by Step for Beginners | Raghav Pal |
+    - text: Automation Step by Step
+    - tooltip "tooltip"
+    - img "Verified":
+      - paragraph
+      - tooltip "tooltip"
+    - text: 1M views •4 years ago
+  - button "Action menu"
+  - link "#1 - Playwright with TypeScript - Setup & Installation | First Script by Naveen AutomationLabs 59,081 views 1 year ago 26 minutes Naveen AutomationLabs tooltip Verified 59K views •1 year ago":
+    - heading "#1 - Playwright with TypeScript - Setup & Installation | First Script by Naveen AutomationLabs 59,081 views 1 year ago 26 minutes" [level=3]: "#1 - Playwright with TypeScript - Setup & Installation | First Script"
+    - text: Naveen AutomationLabs
+    - tooltip "tooltip"
+    - img "Verified":
+      - paragraph
+      - tooltip "tooltip"
+    - text: 59K views •1 year ago
+  - button "Action menu"
+```
+
+# Test source
+
+```ts
+   1 | import { Locator, Page } from "playwright";
+   2 | import { expect } from "playwright/test";
+   3 |
+   4 | export class PlayListPage {
+   5 |     readonly page: Page;
+   6 |    
+   7 |
+   8 |     constructor(page: Page) {
+   9 |         this.page = page;
+  10 |
+  11 |
+  12 |         //Elements
+  13 |        
+  14 |     }
+  15 |
+  16 |     //Methods
+  17 |    
+  18 |     async validatPageTitle(title: string) {
+> 19 |       await expect(this.page).toHaveTitle(title);
+     |                               ^ Error: Timed out 10000ms waiting for expect(locator).toHaveTitle(expected)
+  20 |
+  21 |     }
+  22 | }
+```
