@@ -1,3 +1,0 @@
-Excel file row data
-Skill 1 : API Testing by Testers Talk
-Skill 2 : Rest Assured by Testers Talk

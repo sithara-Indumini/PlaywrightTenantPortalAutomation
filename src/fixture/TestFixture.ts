@@ -1,13 +1,13 @@
 import { test as base } from '@playwright/test';
-import { HomePage } from '../pages/HomePage';
-import { ResultPage } from '../pages/ResultPage';
-import { PlayListPage } from '../pages/PlayListPage';
+import { LoginPage } from '../pages/LoginPage';
+import { ResultPage } from '../pages/OverviewPage';
+import { PlayListPage } from '../pages/AnnouncementPage';
 import { loadTestData } from '../utils/JsonHelper';
 import { TestData } from '../interface/Module1TestData.interface';
  
 export const test = base.extend<{
     saveLogs: void;
-    homepage: HomePage;
+    loginpage: LoginPage;
     resultpage: ResultPage;
     playlistpage: PlayListPage;
     testData: TestData;
@@ -19,9 +19,9 @@ export const test = base.extend<{
     },
 
     { auto: true }],
-    homepage: async ({ page }, use) => {
-        const homePage = new HomePage(page);
-        await use(homePage);
+    loginpage: async ({ page }, use) => {
+        const loginpage = new LoginPage(page);
+        await use(loginpage);
     },
     resultpage: async ({ page }, use) => {
         const resultPage = new ResultPage(page);

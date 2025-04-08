@@ -1,2 +1,0 @@
-Dialog type is : prompt
-Prompt popup message is : What is your tool of choice?

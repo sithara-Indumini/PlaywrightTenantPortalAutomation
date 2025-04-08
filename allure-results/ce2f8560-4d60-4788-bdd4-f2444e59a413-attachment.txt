@@ -1,2 +1,0 @@
-Dialog type is : confirm
-Popup message is : Are you sure?
