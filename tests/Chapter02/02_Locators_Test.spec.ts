@@ -15,20 +15,20 @@ test('Locators in playwright', async ({ page }) => {
 
 
         //getByTestId
-        await page.getByTestId("repositories").first().click();
+       // await page.getByTestId("repositories").first().click();
 
         //getByText
-        await page.getByText("Sign up").click()
+       // await page.getByText("Sign up").click()
 
         //getByPlaceholder, xpath, CssSelectors
-        await page.goto('https://www.youtube.com/@testerstalk');
-        await page.getByPlaceholder('Search').fill('testers talk');
-        await page.locator('//input[@name="search_query"]').fill('testers talk')
-        await page.locator('input[name="search_query"]').fill('testers talk')
+        //await page.goto('https://www.youtube.com/@testerstalk');
+        //await page.getByPlaceholder('Search').fill('testers talk');
+        //await page.locator('//input[@name="search_query"]').fill('testers talk')
+        //await page.locator('input[name="search_query"]').fill('testers talk')
 
         //getByTitle
-        await page.goto('https://www.google.com/');
-        await page.getByTitle('Search').fill('cats');
+        //await page.goto('https://www.google.com/');
+        //await page.getByTitle('Search').fill('cats');
 
 
 

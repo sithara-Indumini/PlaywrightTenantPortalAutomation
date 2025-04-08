@@ -1,0 +1,57 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Element Visual comparison in playwright
+- Location: C:\WorkDirectory\tests\Chapter03\06_VisualTesting_Test.spec.ts:13:7
+
+# Error details
+
+```
+Error: page.goto: NS_ERROR_UNKNOWN_HOST
+Call log:
+  - navigating to "https://github.com/login", waiting until "load"
+
+    at C:\WorkDirectory\tests\Chapter03\06_VisualTesting_Test.spec.ts:15:16
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test'
+   2 |
+   3 | /*test('Visual comparison in playwright', async ({ page }) => {
+   4 |
+   5 |   await page.goto('https://github.com/login');
+   6 |   await expect(page).toHaveScreenshot('GitHubLoginPage.png', { threshold: 0.1 });
+   7 |   await page.getByRole('textbox', { name: 'Username or email address' }).fill('playwright with typescript');
+   8 |   await expect(page).toHaveScreenshot('GitHubLoginPage.png', { threshold: 0.1 });*/
+   9 |
+  10 |
+  11 |
+  12 |
+  13 |   test('Element Visual comparison in playwright', async ({ page }) => {
+  14 |
+> 15 |     await page.goto('https://github.com/login');
+     |                ^ Error: page.goto: NS_ERROR_UNKNOWN_HOST
+  16 |     
+  17 |     //  await page.getByRole('textbox', { name: 'Username or email address' }).fill('playwright with typescript');
+  18 |     // await expect(page).toHaveScreenshot('GitHubLoginPage.png', { threshold: 0.1 });
+  19 |    // await expect(page).toHaveScreenshot('GitHubLoginPage.png', { threshold: 0.2 });
+  20 |    // const element = page.locator('[class="auth-form-body mt-3"]');
+  21 |    // await expect(element).toHaveScreenshot('GitHubLoginForm.png', { threshold: 0.2 });
+  22 |    // await page.locator('#login_field').fill('Playwright with typescript');
+  23 |    // await expect(element).toHaveScreenshot('GitHubLoginForm.png', { threshold: 0.1 });
+  24 |
+  25 |   });
+  26 |
+  27 |
+  28 | //});
+  29 |
+  30 |
+  31 |
+```

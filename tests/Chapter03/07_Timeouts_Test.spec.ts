@@ -12,7 +12,7 @@ test('Timeouts in playwright', async ({ page }) =>{
 
     //Click on sign in
 
-    await page.getByRole('link', { name: 'Sign into Gmail1' }).click({timeout:5000})
+    await page.getByRole('link', { name: 'Sign into Gmail' }).click({timeout:5000})
     await page.getByText('Sign in', { exact: true })
 
     //Validate the web page title

@@ -1,11 +1,543 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="25.18870499999996">
-<testsuite name="Chapter05\07_Optimized_POM_Test.spec.ts" timestamp="2025-04-07T01:55:39.402Z" hostname="firefox" tests="1" failures="0" skipped="0" time="20.341" errors="0">
-<testcase name="Optimized Page Object Model Test in Playwright" classname="Chapter05\07_Optimized_POM_Test.spec.ts" time="20.341">
+<testsuites id="" name="" tests="56" failures="0" skipped="1" errors="0" time="506.64195400000006">
+<testsuite name="Chapter01\01_Record_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="13.158" errors="0">
+<testcase name="test" classname="Chapter01\01_Record_Test.spec.ts" time="13.158">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-01_Record_Test-test-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\02_First_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="18.071" errors="0">
+<testcase name="My First Playwright Typescript Test" classname="Chapter01\02_First_Test.spec.ts" time="18.071">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter01-02_First_Test-My-First-Playwright-Typescript-Test-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\03_RecordAtCursor.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="6.299" errors="0">
+<testcase name="Record at cursor test" classname="Chapter01\03_RecordAtCursor.spec.ts" time="6.299">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-03_RecordAtCursor-Record-at-cursor-test-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter01\04_Codegen.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="2" failures="0" skipped="0" time="24.61" errors="0">
+<testcase name="Codegen test case" classname="Chapter01\04_Codegen.spec.ts" time="18.104">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-04_Codegen-Codegen-test-case-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test 2 will fail" classname="Chapter01\04_Codegen.spec.ts" time="6.506">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-04_Codegen-Test-2-will-fail-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter02\02_Locators_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="6.309" errors="0">
+<testcase name="Locators in playwright" classname="Chapter02\02_Locators_Test.spec.ts" time="6.309">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter02-02_Locators_Test-Locators-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter02\03_hooks_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="2" failures="0" skipped="0" time="19.421" errors="0">
+<testcase name="Test 1" classname="Chapter02\03_hooks_Test.spec.ts" time="9.839">
+<system-out>
+<![CDATA[Running before all tests...
+Running Before Each tests...
+Test 1 execution started....
+Running After Each tests...
+
+[[ATTACHMENT|test-results\Chapter02-03_hooks_Test-Test-1-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test 2" classname="Chapter02\03_hooks_Test.spec.ts" time="9.582">
+<system-out>
+<![CDATA[Running Before Each tests...
+Test 2 execution started....
+Running After Each tests...
+Running after all tests...
+
+[[ATTACHMENT|test-results\Chapter02-03_hooks_Test-Test-2-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter02\04_DropdownList_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.252" errors="0">
+<testcase name="Locators in playwright" classname="Chapter02\04_DropdownList_Test.spec.ts" time="5.252">
+<system-out>
+<![CDATA[The element is visible.
+
+[[ATTACHMENT|test-results\Chapter02-04_DropdownList_Test-Locators-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter02\05_Iframes_DragDrop_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.439" errors="0">
+<testcase name="Handling iFrames Drag and Drop element in playwright" classname="Chapter02\05_Iframes_DragDrop_Test.spec.ts" time="4.439">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter02-05_Iframes_DragD-13b75--Drop-element-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter02\06_MouseActions_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="19.409" errors="0">
+<testcase name="Handling Mouse actions in playwright" classname="Chapter02\06_MouseActions_Test.spec.ts" time="19.409">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter02-06_MouseActions_-ee386-Mouse-actions-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter02\07_KeyBoard_Actions_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.636" errors="0">
+<testcase name="Handling keyboard actions in playwright" classname="Chapter02\07_KeyBoard_Actions_Test.spec.ts" time="2.636">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter02-07_KeyBoard_Acti-92467-board-actions-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter02\08_DatePicker_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.93" errors="0">
+<testcase name="Selecting Date value in playwright" classname="Chapter02\08_DatePicker_Test.spec.ts" time="3.93">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter02-08_DatePicker_Te-0b350-ng-Date-value-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter02\09_Assertions_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="10.378" errors="0">
+<testcase name="Assertions in playwright" classname="Chapter02\09_Assertions_Test.spec.ts" time="10.378">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter02-09_Assertions_Test-Assertions-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter02\10_SoftAssertion_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="10.251" errors="0">
+<testcase name="Soft Assertions in playwright" classname="Chapter02\10_SoftAssertion_Test.spec.ts" time="10.251">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter02-10_SoftAssertion-02467-ft-Assertions-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter02\Screenshots_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="10.611" errors="0">
+<testcase name="Capture screenshots in playwright" classname="Chapter02\Screenshots_Test.spec.ts" time="10.611">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter02-Screenshots_Test-Capture-screenshots-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter03\01_Annotations_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="3" failures="0" skipped="1" time="13.909" errors="0">
+<testcase name="Test 1" classname="Chapter03\01_Annotations_Test.spec.ts" time="7.098">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter03-01_Annotations_Test-Test-1-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test 2" classname="Chapter03\01_Annotations_Test.spec.ts" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Test 3" classname="Chapter03\01_Annotations_Test.spec.ts" time="6.811">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter03-01_Annotations_Test-Test-3-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter03\02_Grouping_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="3" failures="0" skipped="0" time="21.894" errors="0">
+<testcase name="SmokeTesting › Test 1" classname="Chapter03\02_Grouping_Test.spec.ts" time="7.126">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter03-02_Grouping_Test-SmokeTesting-Test-1-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RegressionTesting › Test 2" classname="Chapter03\02_Grouping_Test.spec.ts" time="7.663">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter03-02_Grouping_Test-RegressionTesting-Test-2-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RegressionTesting › Test 3" classname="Chapter03\02_Grouping_Test.spec.ts" time="7.105">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter03-02_Grouping_Test-RegressionTesting-Test-3-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter03\03_Tags_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="3" failures="0" skipped="0" time="21.102" errors="0">
+<testcase name="Test 1" classname="Chapter03\03_Tags_Test.spec.ts" time="6.903">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter03-03_Tags_Test-Test-1-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test 2" classname="Chapter03\03_Tags_Test.spec.ts" time="6.975">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter03-03_Tags_Test-Test-2-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test 3" classname="Chapter03\03_Tags_Test.spec.ts" time="7.224">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter03-03_Tags_Test-Test-3-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter03\04_Retry_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="8.288" errors="0">
+<testcase name="Test 1" classname="Chapter03\04_Retry_Test.spec.ts" time="8.288">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter03-04_Retry_Test-Test-1-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter03\05_Parameterize_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="3" failures="0" skipped="0" time="29.397" errors="0">
+<testcase name="Parameterize tests in playwright - Playwright By Testers Talk" classname="Chapter03\05_Parameterize_Test.spec.ts" time="10.472">
+<system-out>
+<![CDATA[Test execution started...
+
+[[ATTACHMENT|test-results\Chapter03-05_Parameterize_-a4b0a--Playwright-By-Testers-Talk-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Parameterize tests in playwright - Cypress By testers talk" classname="Chapter03\05_Parameterize_Test.spec.ts" time="9.352">
+<system-out>
+<![CDATA[Test execution started...
+
+[[ATTACHMENT|test-results\Chapter03-05_Parameterize_-1fa80-t---Cypress-By-testers-talk-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Parameterize tests in playwright - API Testing by testers talk" classname="Chapter03\05_Parameterize_Test.spec.ts" time="9.573">
+<system-out>
+<![CDATA[Test execution started...
+
+[[ATTACHMENT|test-results\Chapter03-05_Parameterize_-60d19-API-Testing-by-testers-talk-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter03\06_VisualTesting_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.88" errors="0">
+<testcase name="Element Visual comparison in playwright" classname="Chapter03\06_VisualTesting_Test.spec.ts" time="2.88">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter03-06_VisualTesting-9c148-al-comparison-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter03\07_Timeouts_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="7.114" errors="0">
+<testcase name="Timeouts in playwright" classname="Chapter03\07_Timeouts_Test.spec.ts" time="7.114">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter03-07_Timeouts_Test-Timeouts-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter04\01_BrowserContext_Test.spec.js" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="20.446" errors="0">
+<testcase name="Multiple browsers /tans playwright typescript" classname="Chapter04\01_BrowserContext_Test.spec.js" time="20.446">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter04-01_BrowserContex-1e799--tans-playwright-typescript-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter04\02_ReRunFailed_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.572" errors="0">
+<testcase name="Test 1" classname="Chapter04\02_ReRunFailed_Test.spec.ts" time="2.572">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter04-02_ReRunFailed_Test-Test-1-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter04\03_AlertsPopups_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="3" failures="0" skipped="0" time="10.479" errors="0">
+<testcase name="Handling Alert popups in Playwright " classname="Chapter04\03_AlertsPopups_Test.spec.ts" time="5.773">
+<system-out>
+<![CDATA[Alert message is : Sample alert
+Dialog type is : alert
+
+[[ATTACHMENT|test-results\Chapter04-03_AlertsPopups_-069b6-Alert-popups-in-Playwright--firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Handling Popups in Playwright " classname="Chapter04\03_AlertsPopups_Test.spec.ts" time="1.901">
+<system-out>
+<![CDATA[Dialog type is : confirm
+Popup message is : Are you sure?
+
+[[ATTACHMENT|test-results\Chapter04-03_AlertsPopups_-caf9f-dling-Popups-in-Playwright--firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Handling Prompt Popups in Playwright " classname="Chapter04\03_AlertsPopups_Test.spec.ts" time="2.805">
+<system-out>
+<![CDATA[Dialog type is : prompt
+Prompt popup message is : What is your tool of choice?
+
+[[ATTACHMENT|test-results\Chapter04-03_AlertsPopups_-d2b42-rompt-Popups-in-Playwright--firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter04\04_TestReports_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="3" failures="0" skipped="0" time="21.053" errors="0">
+<testcase name="SmokeTesting › Test 1" classname="Chapter04\04_TestReports_Test.spec.ts" time="6.344">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter04-04_TestReports_Test-SmokeTesting-Test-1-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RegressionTesting › Test 2" classname="Chapter04\04_TestReports_Test.spec.ts" time="7.478">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter04-04_TestReports_Test-RegressionTesting-Test-2-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RegressionTesting › Test 3" classname="Chapter04\04_TestReports_Test.spec.ts" time="7.231">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter04-04_TestReports_Test-RegressionTesting-Test-3-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter04\05_TextContent_GetAttribute_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.532" errors="0">
+<testcase name="Get Text &amp; Get attribute value in playwright" classname="Chapter04\05_TextContent_GetAttribute_Test.spec.ts" time="3.532">
+<system-out>
+<![CDATA[Name is: Testers Talk
+Attribute value is : repositories /BakkappaN?tab=repositories
+
+[[ATTACHMENT|test-results\Chapter04-05_TextContent_G-6e269-tribute-value-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter04\06_Iterating_Elements_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.41" errors="0">
+<testcase name="Iterating matching elements in playwright" classname="Chapter04\06_Iterating_Elements_Test.spec.ts" time="3.41">
+<system-out>
+<![CDATA[Text from 1st for loop: PlaywrightTutorialFullCourse
+Text from 1st for loop: PostmanCollectionsByTestersTalk
+Text from 1st for loop: PlaywrightAPITestingTutorial
+Text from 1st for loop: RestAssuredAPITestingFramework
+Text from 1st for loop: PlaywrightTypeScriptTutorialFullCourse
+Text from 1st for loop: CypressTutorialFullCourse
+==========================
+Text from 2nd for loop: PlaywrightTutorialFullCourse
+Text from 2nd for loop: PostmanCollectionsByTestersTalk
+Text from 2nd for loop: PlaywrightAPITestingTutorial
+Text from 2nd for loop: RestAssuredAPITestingFramework
+Text from 2nd for loop: PlaywrightTypeScriptTutorialFullCourse
+Text from 2nd for loop: CypressTutorialFullCourse
+==========================
+Count is: 6
+Text from 3rd for loop: PlaywrightTutorialFullCourse
+Text from 3rd for loop: PostmanCollectionsByTestersTalk
+Text from 3rd for loop: PlaywrightAPITestingTutorial
+Text from 3rd for loop: RestAssuredAPITestingFramework
+Text from 3rd for loop: PlaywrightTypeScriptTutorialFullCourse
+Text from 3rd for loop: CypressTutorialFullCourse
+
+[[ATTACHMENT|test-results\Chapter04-06_Iterating_Ele-b1f34-hing-elements-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter04\07_Checkbox_RadioButton_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.818" errors="0">
+<testcase name="Working with checkbox &amp; radion buttons in playwright" classname="Chapter04\07_Checkbox_RadioButton_Test.spec.ts" time="3.818">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter04-07_Checkbox_Radi-ca2c6-adion-buttons-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter05\01_ReadENVFile_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="7.345" errors="0">
+<testcase name="Read ENV file config in playwright" classname="Chapter05\01_ReadENVFile_Test.spec.ts" time="7.345">
+<system-out>
+<![CDATA[Test exectution started...
+
+[[ATTACHMENT|test-results\Chapter05-01_ReadENVFile_T-11c3b-V-file-config-in-playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter05\02_DataDrivenTestingUsingJson.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="2" failures="0" skipped="0" time="23.375" errors="0">
+<testcase name="Data Driven Testing Using JSON file in playwright: Cypress by Testers Talk" classname="Chapter05\02_DataDrivenTestingUsingJson.spec.ts" time="12.6">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter05-02_DataDrivenTes-11225-ght-Cypress-by-Testers-Talk-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Driven Testing Using JSON file in playwright: API Testing by Testers Talk" classname="Chapter05\02_DataDrivenTestingUsingJson.spec.ts" time="10.775">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter05-02_DataDrivenTes-c6030-API-Testing-by-Testers-Talk-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter05\03_DataDrivenTestingUsingCSVfile.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="2" failures="0" skipped="0" time="20.093" errors="0">
+<testcase name="Data Driven Testing Using csv file in playwright: Playwright by Testers Talk" classname="Chapter05\03_DataDrivenTestingUsingCSVfile.spec.ts" time="10.011">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter05-03_DataDrivenTes-7a989--Playwright-by-Testers-Talk-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Driven Testing Using csv file in playwright: Java Script by testers talk" classname="Chapter05\03_DataDrivenTestingUsingCSVfile.spec.ts" time="10.082">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter05-03_DataDrivenTes-e57f3-Java-Script-by-testers-talk-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter05\04_DataDrivenTestingUsingExcel.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="3" failures="0" skipped="0" time="30.692" errors="0">
+<testcase name="Data Driven Testing Using Excel file in playwright : Playwright by Testers Talk" classname="Chapter05\04_DataDrivenTestingUsingExcel.spec.ts" time="10.263">
+<system-out>
+<![CDATA[Excel file row data
+Skill 1 : Playwright by Testers Talk
+Skill 2 : JavaScript by Testers Talk
+
+[[ATTACHMENT|test-results\Chapter05-04_DataDrivenTes-931bf--Playwright-by-Testers-Talk-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Driven Testing Using Excel file in playwright : Cypress by Testers Talk" classname="Chapter05\04_DataDrivenTestingUsingExcel.spec.ts" time="9.786">
+<system-out>
+<![CDATA[Excel file row data
+Skill 1 : Cypress by Testers Talk
+Skill 2 : Postman by Testers Talk
+
+[[ATTACHMENT|test-results\Chapter05-04_DataDrivenTes-86fcf-ght-Cypress-by-Testers-Talk-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Driven Testing Using Excel file in playwright : API Testing by Testers Talk" classname="Chapter05\04_DataDrivenTestingUsingExcel.spec.ts" time="10.643">
+<system-out>
+<![CDATA[Excel file row data
+Skill 1 : API Testing by Testers Talk
+Skill 2 : Rest Assured by Testers Talk
+
+[[ATTACHMENT|test-results\Chapter05-04_DataDrivenTes-84a0d-API-Testing-by-Testers-Talk-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter05\05_PageObjectModelTest.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="13.155" errors="0">
+<testcase name="Page Object Model Test in Playwright" classname="Chapter05\05_PageObjectModelTest.spec.ts" time="13.155">
+<system-out>
+<![CDATA[Test execution started..
+
+[[ATTACHMENT|test-results\Chapter05-05_PageObjectMod-79171-ct-Model-Test-in-Playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter05\06_Fixture_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="13.335" errors="0">
+<testcase name="Implementing fixtures in Playwright" classname="Chapter05\06_Fixture_Test.spec.ts" time="13.335">
+<system-out>
+<![CDATA[Global before is running...
+Test execution started..
+Test execution ended..
+Global afterEach is running...
+
+[[ATTACHMENT|test-results\Chapter05-06_Fixture_Test--49753-ting-fixtures-in-Playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter05\07_Optimized_POM_Test.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="12.225" errors="0">
+<testcase name="Optimized Page Object Model Test in Playwright" classname="Chapter05\07_Optimized_POM_Test.spec.ts" time="12.225">
 <system-out>
 <![CDATA[Global before is running...
 Global afterEach is running...
 
 [[ATTACHMENT|test-results\Chapter05-07_Optimized_POM-8ed76-ct-Model-Test-in-Playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Chapter05\08_RunTestBasedOnEnv.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="1" failures="0" skipped="0" time="12.36" errors="0">
+<testcase name="Optimized Page Object Model Test in Playwright" classname="Chapter05\08_RunTestBasedOnEnv.spec.ts" time="12.36">
+<system-out>
+<![CDATA[Global before is running...
+Skill : Playwright by Testers Talk
+Skill : Cypress by Testers Talk
+Skill : JavaScript by Testers Talk
+Global afterEach is running...
+
+[[ATTACHMENT|test-results\Chapter05-08_RunTestBasedO-a5608-ct-Model-Test-in-Playwright-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2025-04-08T04:43:59.024Z" hostname="firefox" tests="2" failures="0" skipped="0" time="4.644" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="2.477">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-has-title-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="2.167">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-get-started-link-firefox\trace.zip]]
 ]]>
 </system-out>
 </testcase>

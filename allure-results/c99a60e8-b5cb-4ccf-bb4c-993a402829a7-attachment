@@ -1,0 +1,363 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Assertions in playwright
+- Location: C:\WorkDirectory\tests\Chapter02\09_Assertions_Test.spec.ts:4:5
+
+# Error details
+
+```
+Error: expect.toBeDisabled: Error: strict mode violation: locator('span[id="title"]') resolved to 2 elements:
+    1) <span id="title" class="style-scope ytd-shelf-renderer">People also watched</span> aka getByText('People also watched')
+    2) <span id="title" class="style-scope ytd-reel-shelf-renderer">Shorts</span> aka getByRole('heading', { name: 'Shorts' }).locator('#title')
+
+Call log:
+  - expect.toBeDisabled with timeout 10000ms
+  - waiting for locator('span[id="title"]')
+
+    at C:\WorkDirectory\tests\Chapter02\09_Assertions_Test.spec.ts:32:56
+    at C:\WorkDirectory\tests\Chapter02\09_Assertions_Test.spec.ts:5:5
+```
+
+# Page snapshot
+
+```yaml
+- dialog
+- banner:
+  - button "Guide"
+  - link "YouTube Home"
+  - text: LK
+  - button "Skip navigation"
+  - search:
+    - combobox "Search" [expanded]: Playwright by testers talk
+    - button "Clear search query"
+    - button "Search"
+  - button "Search with your voice"
+  - tooltip "tooltip"
+  - button "Settings"
+  - link "Sign in"
+- navigation:
+  - tab "Home":
+    - link "Home"
+  - tab "Shorts"
+  - tab "Subscriptions":
+    - link "Subscriptions"
+  - tab "You":
+    - link "You"
+  - tab "History":
+    - link "History"
+- main:
+  - tablist:
+    - tab "All" [selected]
+    - tab "Shorts"
+    - tab "Videos"
+    - tab "Unwatched"
+    - tab "Watched"
+    - tab "Recently uploaded"
+    - tab "Live"
+    - tab "Playlists"
+  - button "Search filters": Filters
+  - tooltip "tooltip"
+  - link "Playwright JS/TS Automation Testing from Scratch & Framework"
+  - link "Find the right instructor for you. Choose from many topics, skill levels, and languages. Join millions of learners from around the world..."
+  - text: Sponsored · https://www.udemy.com/
+  - button "My Ad Center"
+  - link
+  - link "Testers Talk tooltip @testerstalk•23.4K subscribers Hi Friends Welcome to Testers Talk channel, Myself Bakkappa N. I have been working as QA SDET Automation Test Lead over a ...":
+    - text: Testers Talk
+    - tooltip "tooltip"
+    - text: "@testerstalk•23.4K subscribers Hi Friends Welcome to Testers Talk channel, Myself Bakkappa N. I have been working as QA SDET Automation Test Lead over a ..."
+  - link "Subscribe"
+  - heading "Playwright by Testers Talk☑️" [level=3]:
+    - link "Playwright by Testers Talk☑️"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "View full playlist"
+  - heading "Playwright TypeScript by Testers Talk☑️" [level=3]:
+    - link "Playwright TypeScript by Testers Talk☑️"
+  - link "Testers Talk"
+  - link "Playlist"
+  - text: Updated 5 days ago
+  - link "#1 Playwright Automation Using TypeScript Full Course 2025 | Playwright TypeScript Beginner Tutorial · 8:55:10"
+  - link "#2 Advanced Playwright TypeScript Tutorial Full Course 2025 | Playwright Automation Tutorial · 2:22:14"
+  - link "View full playlist"
+  - heading "Playwright API Testing by Testers Talk☑️" [level=3]:
+    - link "Playwright API Testing by Testers Talk☑️"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "View full playlist"
+  - heading "Playwright with JavaScript by Testers Talk" [level=3]:
+    - link "Playwright with JavaScript by Testers Talk"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "View full playlist"
+  - heading "Playwright JavaScript by Testers Talk☑️" [level=3]:
+    - link "Playwright JavaScript by Testers Talk☑️"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "View full playlist"
+  - heading "Playwright with JavaScript☑️" [level=3]:
+    - link "Playwright with JavaScript☑️"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "View full playlist"
+  - heading "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial by Testers Talk 77,511 views 1 year ago 6 hours, 55 minutes" [level=3]:
+    - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial by Testers Talk 77,511 views 1 year ago 6 hours, 55 minutes": Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial
+  - button "Action menu"
+  - text: 77K views •1 year ago
+  - link "Go to channel"
+  - link "Testers Talk"
+  - tooltip "tooltip"
+  - text: Playwright enables reliable end-to-end testing for modern web apps. Playwright is an open-source automation library for browser ...
+  - tooltip "tooltip"
+  - text: 55 chapters
+  - button
+  - button "More"
+  - heading "People also watched" [level=2]
+  - heading "Proxy Interview I busted fake interview. Girl was unable to speek at end😂😂 by Gems Coder 1,493,238 views 2 years ago 2 minutes, 17 seconds" [level=3]:
+    - link "Proxy Interview I busted fake interview. Girl was unable to speek at end😂😂 by Gems Coder 1,493,238 views 2 years ago 2 minutes, 17 seconds": Proxy Interview I busted fake interview. Girl was unable to speek at end😂😂
+  - button "Action menu"
+  - text: 1.4M views •2 years ago
+  - link "Go to channel"
+  - link "Gems Coder"
+  - tooltip "tooltip"
+  - 'heading "Playwright vs Selenium: What Advantages Make Playwright the Winner in Automation Testing Battle 🏆 by Execute Automation 44,837 views 1 year ago 11 minutes, 18 seconds" [level=3]':
+    - 'link "Playwright vs Selenium: What Advantages Make Playwright the Winner in Automation Testing Battle 🏆 by Execute Automation 44,837 views 1 year ago 11 minutes, 18 seconds"': "Playwright vs Selenium: What Advantages Make Playwright the Winner in Automation Testing Battle 🏆"
+  - button "Action menu"
+  - text: 44K views •1 year ago
+  - link "Go to channel"
+  - link "Execute Automation"
+  - tooltip "tooltip"
+  - text: Discover the ultimate winner in the automation battle as we explore the compelling advantages that propel Playwright to victory ...
+  - tooltip "tooltip"
+  - img "4K":
+    - paragraph: 4K
+  - text: 11 chapters
+  - button "Introduction | Playwright Modern and Speed | Native Parallel execution support | Auto-waiting Mechanism | Native Playwright Tests | Reporting and Custom Reporting | Playwright Configurations | Wide Range of Testing supports | UI Mode, CodeGen, VSCode plugin, Trace viewer and more | ARIA locator support | Playwright frequent releases and more ..."
+  - button "More"
+  - 'heading "Playwright #27 Select Dropdown List & Verify Dropdown Value by Testers Talk 3,726 views 1 year ago 9 minutes, 6 seconds" [level=3]':
+    - 'link "Playwright #27 Select Dropdown List & Verify Dropdown Value by Testers Talk 3,726 views 1 year ago 9 minutes, 6 seconds"': "Playwright #27 Select Dropdown List & Verify Dropdown Value"
+  - button "Action menu"
+  - text: 3.7K views •1 year ago
+  - link "Go to channel"
+  - link "Testers Talk"
+  - tooltip "tooltip"
+  - text: Playwright enables reliable end-to-end testing for modern web apps. Playwright is an open-source automation library for browser ...
+  - tooltip "tooltip"
+  - heading "Playwright Automation Tutorial For Beginners From Scratch by Mukesh otwani 58,044 views 7 months ago 8 hours, 17 minutes" [level=3]:
+    - link "Playwright Automation Tutorial For Beginners From Scratch by Mukesh otwani 58,044 views 7 months ago 8 hours, 17 minutes": Playwright Automation Tutorial For Beginners From Scratch
+  - button "Action menu"
+  - text: 58K views •7 months ago
+  - link "Go to channel"
+  - link "Mukesh otwani"
+  - tooltip "tooltip"
+  - img "Verified":
+    - paragraph
+    - tooltip "tooltip"
+  - text: Welcome to this Playwright Automation Tutorial for Beginners!. If you're planning to learn Playwright from scratch then your search ...
+  - tooltip "tooltip"
+  - text: 29 chapters
+  - button
+  - button "More"
+  - text: +6 more
+  - heading "BROWSER ON AUTOPILOT - With Playwright MCP Server! by TeckyTalkAI 55 views 2 days ago 21 minutes" [level=3]:
+    - link "BROWSER ON AUTOPILOT - With Playwright MCP Server! by TeckyTalkAI 55 views 2 days ago 21 minutes": BROWSER ON AUTOPILOT - With Playwright MCP Server!
+  - button "Action menu"
+  - text: 55 views •2 days ago
+  - link "Go to channel"
+  - link "TeckyTalkAI"
+  - tooltip "tooltip"
+  - text: Tired of endless manual browsing and tedious automation testing? What if you could put it all on autopilot with the power of AI and ...
+  - tooltip "tooltip"
+  - img "New":
+    - paragraph: New
+  - heading "Playwright with TypeScript by Testers Talk" [level=3]:
+    - link "Playwright with TypeScript by Testers Talk"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "#1 Playwright Automation Using TypeScript Full Course 2025 | Playwright TypeScript Beginner Tutorial · 8:55:10"
+  - link "#2 Advanced Playwright TypeScript Tutorial Full Course 2025 | Playwright Automation Tutorial · 2:22:14"
+  - link "View full playlist"
+  - heading "Playwright API Testing Tutorial Crash Course 2024 by Testers Talk 23,677 views 1 year ago 1 hour, 59 minutes" [level=3]:
+    - link "Playwright API Testing Tutorial Crash Course 2024 by Testers Talk 23,677 views 1 year ago 1 hour, 59 minutes": Playwright API Testing Tutorial Crash Course 2024
+  - button "Action menu"
+  - text: 23K views •1 year ago
+  - link "Go to channel"
+  - link "Testers Talk"
+  - tooltip "tooltip"
+  - text: Playwright API Testing - Playwright enables reliable end-to-end testing for modern web apps. Playwright is an open-source ...
+  - tooltip "tooltip"
+  - text: 15 chapters
+  - button "Playwright API Testing | Setup playwright api testing | Postman collections Playwright github repo | Create POST api request in playwright | Validate status code in playwright | Validate api response in playwright | Playwright Post api request | Playwright Post api request using dynamic request body | Post api request using dynamic json in playwright | Get api request in playwright | Query parameters in playwright | Playwright Put api request | Patch api request in playwright | Playwright Delete api request | Allure report with Playwright"
+  - button "More"
+  - heading "#4 Step-by-Step Guide To Integrate Playwright with CICD Tools(Jenkins,Azure DevOps & GitHub Actions) by Testers Talk 2,150 views 1 month ago 1 hour, 55 minutes" [level=3]:
+    - link "#4 Step-by-Step Guide To Integrate Playwright with CICD Tools(Jenkins,Azure DevOps & GitHub Actions) by Testers Talk 2,150 views 1 month ago 1 hour, 55 minutes": "#4 Step-by-Step Guide To Integrate Playwright with CICD Tools(Jenkins,Azure DevOps & GitHub Actions)"
+  - button "Action menu"
+  - text: 2.1K views •1 month ago
+  - link "Go to channel"
+  - link "Testers Talk"
+  - tooltip "tooltip"
+  - text: Playwright is an open-source automation library for browser testing and web scraping developed by Microsoft and launched on 31 ...
+  - tooltip "tooltip"
+  - img "4K":
+    - paragraph: 4K
+  - text: 23 chapters
+  - button
+  - button "More"
+  - heading "Playwright Automation Tutorial☑️" [level=3]:
+    - link "Playwright Automation Tutorial☑️"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "View full playlist"
+  - heading "Playwright API Automation with JavaScript☑️" [level=3]:
+    - link "Playwright API Automation with JavaScript☑️"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "View full playlist"
+  - heading "#1 Playwright Automation Using TypeScript Full Course 2025 | Playwright TypeScript Beginner Tutorial by Testers Talk 19,480 views 2 months ago 8 hours, 55 minutes" [level=3]:
+    - link "#1 Playwright Automation Using TypeScript Full Course 2025 | Playwright TypeScript Beginner Tutorial by Testers Talk 19,480 views 2 months ago 8 hours, 55 minutes": "#1 Playwright Automation Using TypeScript Full Course 2025 | Playwright TypeScript Beginner Tutorial"
+  - button "Action menu"
+  - text: 19K views •2 months ago
+  - link "Go to channel"
+  - link "Testers Talk"
+  - tooltip "tooltip"
+  - text: "Playwright Automation Using TypeScript Full Course | Playwright TypeScript Beginner Tutorials: Playwright enables reliable ..."
+  - tooltip "tooltip"
+  - img "4K":
+    - paragraph: 4K
+  - text: 58 chapters
+  - button
+  - button "More"
+  - heading "Playwright API Testing Tutorial" [level=3]:
+    - link "Playwright API Testing Tutorial"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "View full playlist"
+  - heading "Playwright JS/TS Automation Testing from Scratch" [level=3]:
+    - link "Playwright JS/TS Automation Testing from Scratch"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "#1 Playwright Automation Using TypeScript Full Course 2025 | Playwright TypeScript Beginner Tutorial · 8:55:10"
+  - link "#2 Advanced Playwright TypeScript Tutorial Full Course 2025 | Playwright Automation Tutorial · 2:22:14"
+  - link "View full playlist"
+  - heading "Shorts" [level=2]
+  - button "More actions"
+  - link
+  - 'heading "#5 Playwright Vs Selenium Automation | Playwright Tutorial #playwright #testing #e2e, 11K views - play Short" [level=3]':
+    - 'link "#5 Playwright Vs Selenium Automation | Playwright Tutorial #playwright #testing #e2e"'
+  - text: 11K views
+  - button "More actions"
+  - link
+  - 'heading "#16 Key Components in Playwright Testing? #playwright #tutorial #automation #testerstalk #testing, 619 views - play Short" [level=3]':
+    - 'link "#16 Key Components in Playwright Testing? #playwright #tutorial #automation #testerstalk #testing"'
+  - text: 619 views
+  - button "More actions"
+  - link
+  - heading "10X Faster Testing?! Playwright vs Selenium, 13K views - play Short" [level=3]:
+    - link "10X Faster Testing?! Playwright vs Selenium"
+  - text: 13K views
+  - button "More actions"
+  - link
+  - 'heading "#4 Playwright Architecture | Playwright Testing Tutorial #playwright #testing #e2e, 1.2K views - play Short" [level=3]':
+    - 'link "#4 Playwright Architecture | Playwright Testing Tutorial #playwright #testing #e2e"'
+  - text: 1.2K views
+  - button "More actions"
+  - link
+  - 'heading "Selenium Vs Playwright : Which Tool Is Better, 70K views - play Short" [level=3]':
+    - 'link "Selenium Vs Playwright : Which Tool Is Better"'
+  - text: 70K views
+  - button "More actions"
+  - link
+  - 'heading "Here for you - Playwright Beginner tutorials | #AskRaghav, 23K views - play Short" [level=3]':
+    - 'link "Here for you - Playwright Beginner tutorials | #AskRaghav"'
+  - text: 23K views
+  - button "More actions"
+  - button "Next"
+  - heading "Playwright Youtube Playlist" [level=3]:
+    - link "Playwright Youtube Playlist"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "View full playlist"
+  - heading "Microsoft Playwright Testing" [level=3]:
+    - link "Microsoft Playwright Testing"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "View full playlist"
+  - heading "Playwright GitHub" [level=3]:
+    - link "Playwright GitHub"
+  - link "Testers Talk"
+  - link "Playlist"
+  - link "Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial · 6:55:08"
+  - link "Playwright API Testing Tutorial Crash Course 2024 · 1:59:55"
+  - link "View full playlist"
+```
+
+# Test source
+
+```ts
+   1 |
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | test('Assertions in playwright', async ({ page }) => {
+   5 |     await test.step('Navigating to URL', async () => {
+   6 |
+   7 |         await page.goto('https://www.youtube.com/');
+   8 |
+   9 |         //Visible
+  10 |         await expect(page.getByPlaceholder('Search', { exact: true }).first()).toBeVisible();
+  11 |         //Invalid one:  await expect(page.getByPlaceholder('Search1',{exact:true}).first()).toBeVisible();
+  12 |
+  13 |         //editable
+  14 |         await expect(page.getByPlaceholder('Search', { exact: true }).first()).toBeEditable();
+  15 |         //enabled
+  16 |         await expect(page.getByPlaceholder('Search', { exact: true }).first()).toBeEnabled();
+  17 |         //empty
+  18 |         await expect(page.getByPlaceholder('Search', { exact: true }).first()).toBeEmpty();
+  19 |
+  20 |
+  21 |         //verify URL, page title, text, count
+  22 |         await page.getByPlaceholder('Search', { exact: true }).first().click();
+  23 |         await page.getByPlaceholder('Search', { exact: true }).first().fill('Playwright by testers talk');
+  24 |         await page.getByPlaceholder('Search', { exact: true }).first().press('Enter');
+  25 |         await expect(page).toHaveURL('https://www.youtube.com/results?search_query=Playwright+by+testers+talk');
+  26 |
+  27 |         await expect(page).toHaveTitle('Playwright by testers talk - YouTube');
+  28 |
+  29 |         await expect(page.locator('span[id="title"]').first()).toHaveText('People also watched');
+  30 |
+  31 |         await expect(page.locator('span[id="title"]')).toHaveCount(2);
+> 32 |         await expect(page.locator('span[id="title"]')).toBeDisabled();
+     |                                                        ^ Error: expect.toBeDisabled: Error: strict mode violation: locator('span[id="title"]') resolved to 2 elements:
+  33 |
+  34 |
+  35 |
+  36 |
+  37 |     });
+  38 | })
+  39 |
+```

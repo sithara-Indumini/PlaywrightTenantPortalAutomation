@@ -1,0 +1,105 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Locators in playwright
+- Location: C:\WorkDirectory\tests\Chapter02\02_Locators_Test.spec.ts:3:5
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByAltText('View BakkappaN\'s full-sized avatar')
+    - waiting for" https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FBakkappaN" navigation to finish...
+    - navigated to "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FBakkappaN"
+
+    at C:\WorkDirectory\tests\Chapter02\02_Locators_Test.spec.ts:14:71
+    at C:\WorkDirectory\tests\Chapter02\02_Locators_Test.spec.ts:4:5
+```
+
+# Page snapshot
+
+```yaml
+- link "Skip to content"
+- banner:
+  - link "Homepage"
+- main:
+  - heading "Sign in to GitHub" [level=1]
+  - text: Username or email address
+  - textbox "Username or email address"
+  - text: Password
+  - textbox "Password"
+  - link "Forgot password?"
+  - button "Sign in"
+  - heading "Password login alternatives" [level=2]
+  - paragraph:
+    - button "Sign in with a passkey"
+  - paragraph:
+    - text: New to GitHub?
+    - link "Create an account"
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Terms"
+    - listitem:
+      - link "Privacy"
+    - listitem:
+      - link "Docs"
+    - listitem:
+      - link "Contact GitHub Support"
+    - listitem:
+      - button "Manage cookies"
+    - listitem:
+      - button "Do not share my personal information"
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | test('Locators in playwright', async ({ page }) => {
+   4 |     await test.step('Navigating to URL', async () => {
+   5 |         await page.goto('https://github.com/BakkappaN');
+   6 |
+   7 |         //getByRole (link,button,menu)
+   8 |         await page.getByRole('link', { name: 'Sign in' }).click()
+   9 |
+  10 |         //getByLabel
+  11 |         await page.getByLabel('Homepage', { exact: true }).first().click();
+  12 |
+  13 |         //getByAltText
+> 14 |         await page.getByAltText("View BakkappaN's full-sized avatar").click();
+     |                                                                       ^ TimeoutError: locator.click: Timeout 10000ms exceeded.
+  15 |
+  16 |
+  17 |         //getByTestId
+  18 |         await page.getByTestId("repositories").first().click();
+  19 |
+  20 |         //getByText
+  21 |         await page.getByText("Sign up").click()
+  22 |
+  23 |         //getByPlaceholder, xpath, CssSelectors
+  24 |         await page.goto('https://www.youtube.com/@testerstalk');
+  25 |         await page.getByPlaceholder('Search').fill('testers talk');
+  26 |         await page.locator('//input[@name="search_query"]').fill('testers talk')
+  27 |         await page.locator('input[name="search_query"]').fill('testers talk')
+  28 |
+  29 |         //getByTitle
+  30 |         await page.goto('https://www.google.com/');
+  31 |         await page.getByTitle('Search').fill('cats');
+  32 |
+  33 |
+  34 |
+  35 |
+  36 |
+  37 |     });
+  38 |
+  39 | });
+  40 |
+```

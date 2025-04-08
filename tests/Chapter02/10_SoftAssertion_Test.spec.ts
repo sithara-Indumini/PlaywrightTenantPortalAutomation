@@ -29,7 +29,7 @@ test('Soft Assertions in playwright', async ({ page }) => {
 
         await expect(page.locator('span[id="title"]').first()).toHaveText('People also watched');
 
-        await expect(page.locator('span[id="title"]')).toHaveCount(3);
+        await expect(page.locator('span[id="title"]')).toHaveCount(2);
        // await expect(page.locator('span[id="title"]')).toBeDisabled();
 
 

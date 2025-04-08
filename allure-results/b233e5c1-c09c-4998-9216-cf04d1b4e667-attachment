@@ -1,0 +1,69 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Test 1
+- Location: C:\WorkDirectory\tests\Chapter04\02_ReRunFailed_Test.spec.ts:7:5
+
+# Error details
+
+```
+Error: expect(locator).toHaveTitle(expected)
+
+Locator: locator(':root')
+Expected string: "Playwright by Testers Talk☑️ - YouTube"
+Received string: "https://www.google.com/search?q=playwright+by+testers+talk&sca_esv=fccbee740c3569c2&source=hp&ei=vavzZ7fvMY-LwPAPz5u_iAc&iflsig=ACkRmUkAAAAAZ_O5zYpMBTmEi7gy8p-x_bOvhe5ZC-fs&ved=0ahUKEwj3wcT63cWMAxWPBRAIHc_ND3EQ4dUDCA4&uact=5&oq=playwright+by+testers+talk&gs_lp=Egdnd3Mtd2l6IhpwbGF5d3JpZ2h0IGJ5IHRlc3RlcnMgdGFsa0giUABYAHAAeACQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgCgAgCYAwCSBwCgBwCyBwC4BwA&sclient=gws-wiz&sei=wavzZ9DyJ8HEwPAPlOSx-Q0"
+Call log:
+  - expect.toHaveTitle with timeout 10000ms
+  - waiting for locator(':root')
+    - waiting for navigation to finish...
+    - navigated to "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dplaywright%2Bby%2Btesters%2Btalk%26sca_esv%3Dfccbee740c3569c2%26source%3Dhp%26ei%3DvavzZ7fvMY-LwPAPz5u_iAc%26iflsig%3DA…"
+    12 × locator resolved to <html>…</html>
+       - unexpected value "https://www.google.com/search?q=playwright+by+testers+talk&sca_esv=fccbee740c3569c2&source=hp&ei=vavzZ7fvMY-LwPAPz5u_iAc&iflsig=ACkRmUkAAAAAZ_O5zYpMBTmEi7gy8p-x_bOvhe5ZC-fs&ved=0ahUKEwj3wcT63cWMAxWPBRAIHc_ND3EQ4dUDCA4&uact=5&oq=playwright+by+testers+talk&gs_lp=Egdnd3Mtd2l6IhpwbGF5d3JpZ2h0IGJ5IHRlc3RlcnMgdGFsa0giUABYAHAAeACQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgCgAgCYAwCSBwCgBwCyBwC4BwA&sclient=gws-wiz&sei=wavzZ9DyJ8HEwPAPlOSx-Q0"
+
+    at C:\WorkDirectory\tests\Chapter04\02_ReRunFailed_Test.spec.ts:19:24
+```
+
+# Test source
+
+```ts
+   1 | // Import playwright module
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | /**
+   5 |  * Author Testers Talk
+   6 |  */
+   7 | test('Test 1', async ({ page }) => {
+   8 |     // Go to URL
+   9 |     await page.goto('https://www.google.com/');
+  10 |
+  11 |     // Search with keywords
+  12 |     await page.getByLabel('Search', { exact: true }).fill('playwright by testers talk');
+  13 |     await page.getByLabel('Search', { exact: true }).press('Enter');
+  14 |
+  15 |     // Click on playlist
+  16 |    // await page.getByRole('link', { name: 'Playwright by Testers Talk☑️' }).first().click();
+  17 |
+  18 |     // Validate web page title 
+> 19 |     await expect(page).toHaveTitle('Playwright by Testers Talk☑️ - YouTube');
+     |                        ^ Error: expect(locator).toHaveTitle(expected)
+  20 | });
+  21 |
+  22 | /**
+  23 |  * Author Testers Talk
+  24 |  */
+  25 | test('Test 2', async ({ page }) => {
+  26 |    expect(true).toBe(false);
+  27 | });
+  28 |
+  29 | /**
+  30 |  * Author Testers Talk
+  31 |  */
+  32 | test('Test 3', async ({ page }) => {
+  33 |     expect(true).toBe(false);
+  34 | });
+```

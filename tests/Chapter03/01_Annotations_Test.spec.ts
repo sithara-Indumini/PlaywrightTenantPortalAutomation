@@ -34,7 +34,7 @@ test.skip('Test 2', async ({ page }) =>{
 })
 
 //Write a test
-test.only('Test 3', async ({ page }) =>{
+test('Test 3', async ({ page }) =>{
     console.log('Test exectution started...');
 
     //Go to URL

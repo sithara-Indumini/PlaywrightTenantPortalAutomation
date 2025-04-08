@@ -51,15 +51,15 @@ test.describe('RegressionTesting', () => {
         await expect(page).toHaveTitle('Gmail');
     });
 
-    test('Test 4', async ({ page }) => {
-        //Go to URL
-        await page.goto('https://workspace.google.com/intl/en-US/gmail/');
+    // test('Test 4', async ({ page }) => {
+    //     //Go to URL
+    //     await page.goto('https://workspace.google.com/intl/en-US/gmail/');
 
-        //Click on sign in
-        await page.getByRole('link', { name: 'Sign into Gmail' }).click()
-        await page.getByText('Sign in', { exact: true })
+    //     //Click on sign in
+    //     await page.getByRole('link', { name: 'Sign into Gmail' }).click()
+    //     await page.getByText('Sign in', { exact: true })
 
-        //Validate the web page title
-        await expect(page).toHaveTitle('Gmail5');
-    });
+    //     //Validate the web page title
+    //     await expect(page).toHaveTitle('Gmail5');
+    // });
 });

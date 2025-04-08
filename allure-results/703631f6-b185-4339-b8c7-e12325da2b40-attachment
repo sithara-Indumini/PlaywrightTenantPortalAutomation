@@ -1,0 +1,55 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Get Text & Get attribute value in playwright
+- Location: C:\WorkDirectory\tests\Chapter04\05_TextContent_GetAttribute_Test.spec.ts:4:5
+
+# Error details
+
+```
+TimeoutError: browserType.launch: Timeout 180000ms exceeded.
+Call log:
+  - <launching> C:\WINDOWS\system32\config\systemprofile\AppData\Local\ms-playwright\firefox-1475\firefox\firefox.exe -no-remote -wait-for-browser -foreground -profile C:\WINDOWS\TEMP\playwright_firefoxdev_profile-L9ik35 -juggler-pipe --start-maximized -silent
+  - <launched> pid=25820
+  - [pid=25820][err] JavaScript warning: resource://services-settings/Utils.sys.mjs, line 116: unreachable code after return statement
+  - [pid=25820][out] console.warn: services.settings: Ignoring preference override of remote settings server
+  - [pid=25820][out] console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+  - [pid=25820][out]
+  - [pid=25820][out] Juggler listening to the pipe
+  - [pid=25820][out] console.error: "Warning: unrecognized command line flag" "-foreground"
+
+```
+
+# Test source
+
+```ts
+   1 | // Import playwright module
+   2 | import { test, expect } from '@playwright/test'
+   3 |
+>  4 | test('Get Text & Get attribute value in playwright', async ({ page }) => {
+     |     ^ TimeoutError: browserType.launch: Timeout 180000ms exceeded.
+   5 |     // Go to URL
+   6 |     await page.goto('https://github.com/BakkappaN');
+   7 |
+   8 |     // Get element text & assert
+   9 |    
+  10 |    //const name= await page.locator('[itemprop="name"]').textContent();
+  11 |    const name = await page.locator('[itemprop="name"]').innerText();
+  12 |    //removing the spaces
+  13 |    const finalName=name?.trim();
+  14 |    console.log(`Name is: ${finalName}`);
+  15 |
+  16 |    //Assertion
+  17 |    expect(finalName).toBe('Testers Talk');
+  18 |
+  19 |     // Get attribute value
+  20 |     const attributeValue =  await page.getByTestId('repositories').first().getAttribute('data-selected-links');
+  21 |     console.log(`Attribute value is : ${attributeValue}`);
+  22 |   
+  23 | });
+```

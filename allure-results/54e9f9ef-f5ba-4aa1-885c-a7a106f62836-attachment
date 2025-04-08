@@ -1,0 +1,97 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: RegressionTesting >> Test 3
+- Location: C:\WorkDirectory\tests\Chapter04\04_TestReports_Test.spec.ts:41:9
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('link', { name: 'Sign into Gmail' })
+    - locator resolved to <a data-g-action="sign in" aria-label="Sign into Gmail" data-g-event="gmail: global nav" class="button button--medium header__aside__button button--desktop button--tablet button--mobile" href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https://mail.google.com/mail/&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin" data-g-label="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.c…>…</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+
+    at C:\WorkDirectory\tests\Chapter04\04_TestReports_Test.spec.ts:47:67
+```
+
+# Test source
+
+```ts
+   1 | // Import playwright module
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | /**
+   5 |  * Author Testers Talk
+   6 |  */
+   7 | test.describe('SmokeTesting', () => {
+   8 |     // Write a test
+   9 |     test('Test 1', async ({ page }) => {
+  10 |         // Go to URL
+  11 |         //Go to URL
+  12 |         await page.goto('https://workspace.google.com/intl/en-US/gmail/');
+  13 |
+  14 |         //Click on sign in
+  15 |         await page.getByRole('link', { name: 'Sign into Gmail' }).click()
+  16 |         await page.getByText('Sign in', { exact: true })
+  17 |
+  18 |         //Validate the web page title
+  19 |         await expect(page).toHaveTitle('Gmail');
+  20 |     });
+  21 | });
+  22 |
+  23 | /**
+  24 |  * Author Testers Talk
+  25 |  */
+  26 | test.describe('RegressionTesting', () => {
+  27 |     // Write a test
+  28 |     test('Test 2', async ({ page }) => {
+  29 |         //Go to URL
+  30 |         await page.goto('https://workspace.google.com/intl/en-US/gmail/');
+  31 |
+  32 |         //Click on sign in
+  33 |         await page.getByRole('link', { name: 'Sign into Gmail' }).click()
+  34 |         await page.getByText('Sign in', { exact: true })
+  35 |
+  36 |         //Validate the web page title
+  37 |         await expect(page).toHaveTitle('Gmail');
+  38 |     });
+  39 |
+  40 |     // Write a test
+  41 |     test('Test 3', async ({ page }) => {
+  42 |         // Go to URL
+  43 |         //Go to URL
+  44 |         await page.goto('https://workspace.google.com/intl/en-US/gmail/');
+  45 |
+  46 |         //Click on sign in
+> 47 |         await page.getByRole('link', { name: 'Sign into Gmail' }).click()
+     |                                                                   ^ TimeoutError: locator.click: Timeout 10000ms exceeded.
+  48 |         await page.getByText('Sign in', { exact: true })
+  49 |
+  50 |         //Validate the web page title
+  51 |         await expect(page).toHaveTitle('Gmail');
+  52 |     });
+  53 |
+  54 |     // test('Test 4', async ({ page }) => {
+  55 |     //     //Go to URL
+  56 |     //     await page.goto('https://workspace.google.com/intl/en-US/gmail/');
+  57 |
+  58 |     //     //Click on sign in
+  59 |     //     await page.getByRole('link', { name: 'Sign into Gmail' }).click()
+  60 |     //     await page.getByText('Sign in', { exact: true })
+  61 |
+  62 |     //     //Validate the web page title
+  63 |     //     await expect(page).toHaveTitle('Gmail5');
+  64 |     // });
+  65 | });
+```

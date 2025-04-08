@@ -9,7 +9,7 @@ test('Test 1',{tag:['@SmokeTesting']}, async ({ page }) =>{
     await page.goto('https://workspace.google.com/intl/en-US/gmail/');
 
     //Click on sign in
-    await page.getByRole('link', { name: '1Sign into Gmail' }).click()
+    await page.getByRole('link', { name: 'Sign into Gmail' }).click()
     await page.getByText('Sign in', { exact: true })
 
     //Validate the web page title
