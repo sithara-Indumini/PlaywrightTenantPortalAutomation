@@ -1,3 +1,0 @@
-Excel file row data
-Skill 1 : Playwright by Testers Talk
-Skill 2 : JavaScript by Testers Talk

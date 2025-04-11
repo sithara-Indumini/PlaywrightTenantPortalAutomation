@@ -1,11 +1,12 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="25.18870499999996">
-<testsuite name="Chapter05\07_Optimized_POM_Test.spec.ts" timestamp="2025-04-07T01:55:39.402Z" hostname="firefox" tests="1" failures="0" skipped="0" time="20.341" errors="0">
-<testcase name="Optimized Page Object Model Test in Playwright" classname="Chapter05\07_Optimized_POM_Test.spec.ts" time="20.341">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.31973199999999">
+<testsuite name="Login\TC_001.spec.ts" timestamp="2025-04-08T15:52:42.308Z" hostname="firefox" tests="1" failures="0" skipped="0" time="9.664" errors="0">
+<testcase name="Verify that user able to login to the tenant portal with valid credentials" classname="Login\TC_001.spec.ts" time="9.664">
 <system-out>
-<![CDATA[Global before is running...
-Global afterEach is running...
+<![CDATA[❌ Test case failed: Text does not match
+Found text: Login Page
+❌ Test failed: Success message not found
 
-[[ATTACHMENT|test-results\Chapter05-07_Optimized_POM-8ed76-ct-Model-Test-in-Playwright-firefox\trace.zip]]
+[[ATTACHMENT|test-results\Login-TC_001-Verify-that-u-6b6a8-rtal-with-valid-credentials-firefox\trace.zip]]
 ]]>
 </system-out>
 </testcase>

@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\WorkDirectory\\playwright.config.ts",
-    "rootDir": "C:/WorkDirectory/tests",
+    "configFile": "C:\\TenantPortalWorkDirectory\\playwright.config.ts",
+    "rootDir": "C:/TenantPortalWorkDirectory/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -36,7 +36,7 @@
         null
       ],
       [
-        "C:\\WorkDirectory\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "C:\\TenantPortalWorkDirectory\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         null
       ]
     ],
@@ -47,7 +47,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/WorkDirectory/test-results",
+        "outputDir": "C:/TenantPortalWorkDirectory/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -55,7 +55,7 @@
         },
         "id": "firefox",
         "name": "firefox",
-        "testDir": "C:/WorkDirectory/tests",
+        "testDir": "C:/TenantPortalWorkDirectory/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -72,13 +72,13 @@
   },
   "suites": [
     {
-      "title": "Chapter05\\07_Optimized_POM_Test.spec.ts",
-      "file": "Chapter05/07_Optimized_POM_Test.spec.ts",
+      "title": "Login\\TC_001.spec.ts",
+      "file": "Login/TC_001.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Optimized Page Object Model Test in Playwright",
+          "title": "Verify that user able to login to the tenant portal with valid credentials",
           "ok": true,
           "tags": [],
           "tests": [
@@ -93,24 +93,39 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 20341,
+                  "duration": 9664,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Global before is running...\n"
+                      "text": "❌ Test case failed: Text does not match\n"
                     },
                     {
-                      "text": "Global afterEach is running...\n"
+                      "text": "Found text: Login Page\n"
+                    },
+                    {
+                      "text": "❌ Test failed: Success message not found\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-07T01:55:40.378Z",
+                  "steps": [
+                    {
+                      "title": "Enter User name and password",
+                      "duration": 2452,
+                      "steps": [
+                        {
+                          "title": "Verify Login and success message",
+                          "duration": 2370
+                        }
+                      ]
+                    }
+                  ],
+                  "startTime": "2025-04-08T15:52:42.898Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\WorkDirectory\\test-results\\Chapter05-07_Optimized_POM-8ed76-ct-Model-Test-in-Playwright-firefox\\trace.zip"
+                      "path": "C:\\TenantPortalWorkDirectory\\test-results\\Login-TC_001-Verify-that-u-6b6a8-rtal-with-valid-credentials-firefox\\trace.zip"
                     }
                   ]
                 }
@@ -118,9 +133,9 @@
               "status": "expected"
             }
           ],
-          "id": "a78458ebd4c88658c0d7-00fda493214e12547e1c",
-          "file": "Chapter05/07_Optimized_POM_Test.spec.ts",
-          "line": 4,
+          "id": "e7c8c75d60074e6a67e3-146d93d36bb7e9ed0382",
+          "file": "Login/TC_001.spec.ts",
+          "line": 5,
           "column": 5
         }
       ]
@@ -128,8 +143,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-07T01:55:38.329Z",
-    "duration": 25188.704999999958,
+    "startTime": "2025-04-08T15:52:41.676Z",
+    "duration": 12319.731999999989,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
