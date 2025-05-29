@@ -9,7 +9,11 @@ test('Verify that user able to login to the tenant portal with valid credentials
 
     const headingText = await page.locator('xpath=//*[@id="content"]/div/h2').textContent();
 
+<<<<<<< HEAD
     if (headingText?.trim() === 'Login Page') {
+=======
+    if (headingText?.trim() === 'Login Page1') {
+>>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
         console.log('✅ Useer Navigate to Tenant Portal URL');
     } else {
         console.log('❌ Test case failed: Text does not match');
@@ -21,13 +25,20 @@ test('Verify that user able to login to the tenant portal with valid credentials
         await page.getByRole('textbox', { name: 'username' }).fill('tomsmith');
         await page.getByRole('textbox', { name: 'password' }).fill('SuperSecretPassword!');
 
+<<<<<<< HEAD
     //Login and success message
 
+=======
+>>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
         await test.step('Verify Login and success message', async () => {
             await page.click('button:has-text("Login")')
             const message = await page.locator('.flash.success').textContent();
 
+<<<<<<< HEAD
             if (message?.includes('You logged into a secure area!')) {
+=======
+            if (message?.includes('You logged into a secure area1!')) {
+>>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
                 console.log('✅ Test passed: Logged in successfully with success message');
             } else {
                 console.log('❌ Test failed: Success message not found');

@@ -90,10 +90,14 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 14,
                   "parallelIndex": 0,
                   "status": "passed",
+<<<<<<< HEAD
                   "duration": 9664,
+=======
+                  "duration": 9747,
+>>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
                   "errors": [],
                   "stdout": [
                     {
@@ -111,16 +115,28 @@
                   "steps": [
                     {
                       "title": "Enter User name and password",
+<<<<<<< HEAD
                       "duration": 2452,
                       "steps": [
                         {
                           "title": "Verify Login and success message",
                           "duration": 2370
+=======
+                      "duration": 2641,
+                      "steps": [
+                        {
+                          "title": "Verify Login and success message",
+                          "duration": 2565
+>>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
                         }
                       ]
                     }
                   ],
+<<<<<<< HEAD
                   "startTime": "2025-04-08T15:52:42.898Z",
+=======
+                  "startTime": "2025-04-08T13:40:11.945Z",
+>>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
                   "attachments": [
                     {
                       "name": "trace",
@@ -143,8 +159,13 @@
   ],
   "errors": [],
   "stats": {
+<<<<<<< HEAD
     "startTime": "2025-04-08T15:52:41.676Z",
     "duration": 12319.731999999989,
+=======
+    "startTime": "2025-04-08T13:40:10.722Z",
+    "duration": 12326.162000000477,
+>>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

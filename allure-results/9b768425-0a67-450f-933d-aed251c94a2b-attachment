@@ -1,0 +1,45 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Verify that user able to login to the tenant portal with valid credentials
+- Location: C:\TenantPortalWorkDirectory\tests\Login\TC_001.spec.ts:5:5
+
+# Error details
+
+```
+Error: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for getByRole('link', { name: 'Sign into Gmail' })
+
+    at C:\TenantPortalWorkDirectory\tests\Login\TC_001.spec.ts:12:63
+```
+
+# Test source
+
+```ts
+   1 | //Import the playwright module
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | //Write a test
+   5 | test('Verify that user able to login to the tenant portal with valid credentials', async ({ page }) =>{
+   6 |     console.log('Test exectution started...');
+   7 |
+   8 |     //Go to URL
+   9 |     await page.goto('http://the-internet.herokuapp.com/login');
+  10 |
+  11 |     //Click on sign in
+> 12 |     await page.getByRole('link', { name: 'Sign into Gmail' }).click()
+     |                                                               ^ Error: locator.click: Target page, context or browser has been closed
+  13 |     await page.getByText('Sign in', { exact: true })
+  14 |
+  15 |     //Validate the web page title
+  16 |     await expect(page).toHaveTitle('Gmail');
+  17 |
+  18 | })
+  19 |
+```
