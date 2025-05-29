@@ -31,6 +31,8 @@ steps:
   - script: npx ts-node src/utils/RunUpdate.ts
     displayName: "Update Test Plan Test Case Status"
     condition: always()
+  - env:
+    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
     
     
 
