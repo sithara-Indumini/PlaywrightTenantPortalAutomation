@@ -31,7 +31,7 @@ export default defineConfig({
     ['html'],
     ['json', { outputFile: 'json-test-report.json' }],
     ['junit', { outputFile: 'junit-test-report.xml' }],
-    // ['list'],
+    //['list'],
     ['dot'],
     ['allure-playwright'],
 
@@ -40,7 +40,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-    headless: false,
+    headless: true,
     screenshot: 'only-on-failure',
     testIdAttribute: 'data-tab-item',
     trace: 'on',

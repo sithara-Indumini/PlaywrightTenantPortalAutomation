@@ -1,18 +1,11 @@
-<<<<<<< HEAD
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.31973199999999">
-<testsuite name="Login\TC_001.spec.ts" timestamp="2025-04-08T15:52:42.308Z" hostname="firefox" tests="1" failures="0" skipped="0" time="9.664" errors="0">
-<testcase name="Verify that user able to login to the tenant portal with valid credentials" classname="Login\TC_001.spec.ts" time="9.664">
-=======
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.326162000000476">
-<testsuite name="Login\TC_001.spec.ts" timestamp="2025-04-08T13:40:11.351Z" hostname="firefox" tests="1" failures="0" skipped="0" time="9.747" errors="0">
-<testcase name="Verify that user able to login to the tenant portal with valid credentials" classname="Login\TC_001.spec.ts" time="9.747">
->>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="9.313430999999982">
+<testsuite name="Login\TC_001.spec.ts" timestamp="2025-04-11T05:01:45.767Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.714" errors="0">
+<testcase name="[1317] Verify that user able to login to the tenant portal with valid credentials" classname="Login\TC_001.spec.ts" time="5.714">
 <system-out>
-<![CDATA[❌ Test case failed: Text does not match
-Found text: Login Page
-❌ Test failed: Success message not found
+<![CDATA[✅ Useer Navigate to Tenant Portal URL
+✅ Test passed: Logged in successfully with success message
 
-[[ATTACHMENT|test-results\Login-TC_001-Verify-that-u-6b6a8-rtal-with-valid-credentials-firefox\trace.zip]]
+[[ATTACHMENT|test-results\Login-TC_001--1317-Verify--f5a7a-rtal-with-valid-credentials-firefox\trace.zip]]
 ]]>
 </system-out>
 </testcase>

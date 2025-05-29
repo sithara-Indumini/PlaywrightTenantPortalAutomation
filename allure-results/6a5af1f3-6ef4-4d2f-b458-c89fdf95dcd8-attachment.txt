@@ -1,2 +1,0 @@
-✅ Useer Navigate to Tenant Portal URL
-❌ Test failed: Success message not found

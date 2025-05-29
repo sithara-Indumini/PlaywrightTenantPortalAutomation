@@ -1,3 +1,0 @@
-❌ Test case failed: Text does not match
-Found text: Login Page
-❌ Test failed: Success message not found

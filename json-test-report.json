@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\TenantPortalWorkDirectory\\playwright.config.ts",
-    "rootDir": "C:/TenantPortalWorkDirectory/tests",
+    "configFile": "C:\\Automation\\TenantPortalAutomation\\playwright.config.ts",
+    "rootDir": "C:/Automation/TenantPortalAutomation/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -36,7 +36,7 @@
         null
       ],
       [
-        "C:\\TenantPortalWorkDirectory\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "C:\\Automation\\TenantPortalAutomation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         null
       ]
     ],
@@ -47,7 +47,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/TenantPortalWorkDirectory/test-results",
+        "outputDir": "C:/Automation/TenantPortalAutomation/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -55,7 +55,7 @@
         },
         "id": "firefox",
         "name": "firefox",
-        "testDir": "C:/TenantPortalWorkDirectory/tests",
+        "testDir": "C:/Automation/TenantPortalAutomation/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -78,9 +78,11 @@
       "line": 0,
       "specs": [
         {
-          "title": "Verify that user able to login to the tenant portal with valid credentials",
+          "title": "[1317] Verify that user able to login to the tenant portal with valid credentials",
           "ok": true,
-          "tags": [],
+          "tags": [
+            "PlaywrightWithAzureDevOpsPipeline"
+          ],
           "tests": [
             {
               "timeout": 120000,
@@ -90,24 +92,17 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 14,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-<<<<<<< HEAD
-                  "duration": 9664,
-=======
-                  "duration": 9747,
->>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
+                  "duration": 5714,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "❌ Test case failed: Text does not match\n"
+                      "text": "✅ Useer Navigate to Tenant Portal URL\n"
                     },
                     {
-                      "text": "Found text: Login Page\n"
-                    },
-                    {
-                      "text": "❌ Test failed: Success message not found\n"
+                      "text": "✅ Test passed: Logged in successfully with success message\n"
                     }
                   ],
                   "stderr": [],
@@ -115,33 +110,21 @@
                   "steps": [
                     {
                       "title": "Enter User name and password",
-<<<<<<< HEAD
-                      "duration": 2452,
+                      "duration": 1071,
                       "steps": [
                         {
                           "title": "Verify Login and success message",
-                          "duration": 2370
-=======
-                      "duration": 2641,
-                      "steps": [
-                        {
-                          "title": "Verify Login and success message",
-                          "duration": 2565
->>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
+                          "duration": 968
                         }
                       ]
                     }
                   ],
-<<<<<<< HEAD
-                  "startTime": "2025-04-08T15:52:42.898Z",
-=======
-                  "startTime": "2025-04-08T13:40:11.945Z",
->>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
+                  "startTime": "2025-04-11T05:01:46.684Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\TenantPortalWorkDirectory\\test-results\\Login-TC_001-Verify-that-u-6b6a8-rtal-with-valid-credentials-firefox\\trace.zip"
+                      "path": "C:\\Automation\\TenantPortalAutomation\\test-results\\Login-TC_001--1317-Verify--f5a7a-rtal-with-valid-credentials-firefox\\trace.zip"
                     }
                   ]
                 }
@@ -149,7 +132,7 @@
               "status": "expected"
             }
           ],
-          "id": "e7c8c75d60074e6a67e3-146d93d36bb7e9ed0382",
+          "id": "e7c8c75d60074e6a67e3-ffa6e236bdf4ebed36bd",
           "file": "Login/TC_001.spec.ts",
           "line": 5,
           "column": 5
@@ -159,13 +142,8 @@
   ],
   "errors": [],
   "stats": {
-<<<<<<< HEAD
-    "startTime": "2025-04-08T15:52:41.676Z",
-    "duration": 12319.731999999989,
-=======
-    "startTime": "2025-04-08T13:40:10.722Z",
-    "duration": 12326.162000000477,
->>>>>>> cf08b2d844d5bc4c9fcbb96470cf7e48ce26a6f9
+    "startTime": "2025-04-11T05:01:44.424Z",
+    "duration": 9313.430999999982,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
